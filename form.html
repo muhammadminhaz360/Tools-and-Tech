@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+
+<body>
+    <!--Form in HTML-->
+    <h5>Registration Form</h5>
+
+    <form action="/action.php">
+        <!--input type-->
+        <input type="text" placeholder="Username">
+        <br><br>
+        <input type="password" placeholder="Password">
+        <br><br>
+        <br><br>
+
+        <h5> Select your class: </h5>
+
+        <!--radio button & radio button for label-->
+        <label for="101">
+           <input type="radio" value="class XI" name="class" id="101"> class XI
+        </label>
+        <br><br>
+        <label for="102">
+           <input type="radio" value="class XII" name="class" id="102"> class XII
+        </label>
+        <br><br>
+
+        <h5>Select your favourite subject</h5>
+
+        <!--checkbox and checkbox for label-->
+        <label for="math">
+           <input type="checkbox" value="math" name="subject" id="101"> math
+        </label>
+           <br><br>
+
+           <label for="physics">
+           <input type="checkbox" value="physics" name="subject" id="102"> Physics
+           </label>
+           <br><br>
+
+           <label for="chemistry">
+           <input type="checkbox" value="chemistry" name="subject" id="103"> Chemistry
+           </label>
+           <br><br>
+
+           <label for="Computer Science">
+           <input type="checkbox" value="Computer Science" name="subject" id="104"> Computer Science
+           </label>
+           <br><br>
+           <!-- select from dropdown-->
+              <h5>Select your city</h5>
+            <select name="city">
+                <option value="Chittagong"> Chittagong </option>
+                <option value="Dhaka"> Dhaka </option>
+                <option value="Rajshahi"> Rajshahi </option>
+                <option value="Khulna"> Khulna </option>
+            </select>
+            <br><br>
+
+           <!--text area-->
+           <textarea name="feedback" id="101" placeholder="please give your valuable feedback here " rows=5> feedback</textarea>
+              <br><br>
+                <!-- submit type button-->
+           <input type="submit" value="Register">
+
+    </form>
+    
+</body>
+</html>
